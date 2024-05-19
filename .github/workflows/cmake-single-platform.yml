@@ -22,7 +22,7 @@ jobs:
         echo FILES IN _build:
         ls _build
         mv _build/prototype artifacts
-        ECHO FILES IN artifacts:
+        echo FILES IN artifacts:
         ls artifacts
 
     - name: Tests
