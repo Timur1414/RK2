@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.4)
-project(prototype)
+project(Prototype_rk)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -14,7 +14,7 @@ add_library(prototype STATIC prototype.h)
 
 option(BUILD_TESTS "Build tests" OFF)
 
-add_executable(prototype prototype.cpp)
+add_executable(example prototype.cpp)
 target_link_libraries(prototype)
 
 if(BUILD_TESTS)
