@@ -2,26 +2,8 @@
 #include <gmock/gmock.h>
 #include <iostream>
 #include <sstream>
+#include <prototype.h>
 
-class Prototype{
-public:
-	virtual ~Prototype(){}
-	virtual Prototype* Clone() = 0;
-protected:
-	Prototype(){}
-};
-class ConcretePrototype:public Prototype{
-public:
-	ConcretePrototype(){}
-	ConcretePrototype(const ConcretePrototype& cp){
-		*this = cp;
-		std::cout<<"ConcretePrototype copy ..."<<std::endl;
-	}
-	~ConcretePrototype(){}
-	virtual Prototype* Clone() {
-		return new ConcretePrototype(*this);
-	}
-};
 class PrototypeMock: public Prototype {
 public:
     ~PrototypeMock() override = default;
