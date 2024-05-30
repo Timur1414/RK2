@@ -4,7 +4,7 @@
 #include <sstream>
 #include <prototype.h>
 
-class PrototypeMock: public Prototype {
+class PrototypeMock: public ConcretePrototype {
 public:
     ~PrototypeMock() override = default;
     MOCK_METHOD0(Clone, Prototype*());
