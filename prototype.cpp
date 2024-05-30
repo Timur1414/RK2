@@ -6,7 +6,7 @@
  ************************************************************************/
 
 #include<iostream>
-#include <prototype.h>
+#include "prototype.h"
 
 int main(){
 	Prototype* p = new ConcretePrototype();
