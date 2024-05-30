@@ -10,7 +10,7 @@ set(VERSION_TWEAK 0)
 set(VERSION\${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}.${VERSION_TWEAK})
 set(VERSION_STRING "v${VERSION}")
 include_directories(.)
-add_library(prototype STATIC prototype.h)
+add_library(prototype STATIC prototype.h prototype.cpp)
 
 option(BUILD_TESTS "Build tests" OFF)
 
